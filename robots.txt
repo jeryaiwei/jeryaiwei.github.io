@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://jeryaiwei.github.io/sitemap.xml
