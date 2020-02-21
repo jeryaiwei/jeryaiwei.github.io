@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>shortcodes on Jerry</title>
+    <title>shortcodes on Jerry Blog</title>
     <link>https://jeryaiwei.github.io/tags/shortcodes/</link>
-    <description>Recent content in shortcodes on Jerry</description>
+    <description>Recent content in shortcodes on Jerry Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
+    <language>zh-cn</language>
     <lastBuildDate>Tue, 30 Aug 2016 16:01:23 +0800</lastBuildDate>
     
 	<atom:link href="https://jeryaiwei.github.io/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />

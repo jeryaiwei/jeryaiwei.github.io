@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jerry</title>
+    <title>Jerry Blog</title>
     <link>https://jeryaiwei.github.io/</link>
-    <description>Recent content on Jerry</description>
+    <description>Recent content on Jerry Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
+    <language>zh-cn</language>
     <lastBuildDate>Thu, 08 Mar 2018 17:40:19 +0800</lastBuildDate>
     
 	<atom:link href="https://jeryaiwei.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>About</title>
+      <title>关于</title>
       <link>https://jeryaiwei.github.io/about/</link>
       <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
       
       <guid>https://jeryaiwei.github.io/about/</guid>
-      <description>Hugo is a static site engine written in Go.
-It makes use of a variety of open source projects including:</description>
+      <description>Hugo is a static site engine written in Go. It makes use of a variety of open source projects including:</description>
     </item>
     
     <item>
