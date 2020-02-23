@@ -1,15 +1,51 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Jerry Blog</title>
+    <title>Categories on </title>
     <link>https://jeryaiwei.github.io/categories/</link>
-    <description>Recent content in Categories on Jerry Blog</description>
+    <description>Recent content in Categories on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Thu, 31 Aug 2017 15:43:48 +0800</lastBuildDate>
+    <language>en</language>
+    <lastBuildDate>Mon, 04 Mar 2019 16:01:23 +0800</lastBuildDate>
     
 	<atom:link href="https://jeryaiwei.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>docs</title>
+      <link>https://jeryaiwei.github.io/categories/docs/</link>
+      <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
+      
+      <guid>https://jeryaiwei.github.io/categories/docs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>index</title>
+      <link>https://jeryaiwei.github.io/categories/index/</link>
+      <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
+      
+      <guid>https://jeryaiwei.github.io/categories/index/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>math</title>
+      <link>https://jeryaiwei.github.io/categories/math/</link>
+      <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
+      
+      <guid>https://jeryaiwei.github.io/categories/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shortcodes</title>
+      <link>https://jeryaiwei.github.io/categories/shortcodes/</link>
+      <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://jeryaiwei.github.io/categories/shortcodes/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>English</title>
@@ -21,29 +57,29 @@
     </item>
     
     <item>
-      <title>日本語</title>
-      <link>https://jeryaiwei.github.io/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E/</link>
-      <pubDate>Wed, 30 Aug 2017 01:53:34 +0800</pubDate>
+      <title>test</title>
+      <link>https://jeryaiwei.github.io/categories/test/</link>
+      <pubDate>Wed, 30 Aug 2017 15:43:48 +0800</pubDate>
       
-      <guid>https://jeryaiwei.github.io/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E/</guid>
+      <guid>https://jeryaiwei.github.io/categories/test/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>中文</title>
-      <link>https://jeryaiwei.github.io/categories/%E4%B8%AD%E6%96%87/</link>
-      <pubDate>Wed, 30 Aug 2017 01:37:56 +0800</pubDate>
+      <title>Development</title>
+      <link>https://jeryaiwei.github.io/categories/development/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://jeryaiwei.github.io/categories/%E4%B8%AD%E6%96%87/</guid>
+      <guid>https://jeryaiwei.github.io/categories/development/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>shortcodes</title>
-      <link>https://jeryaiwei.github.io/categories/shortcodes/</link>
-      <pubDate>Tue, 30 Aug 2016 16:01:23 +0800</pubDate>
+      <title>golang</title>
+      <link>https://jeryaiwei.github.io/categories/golang/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://jeryaiwei.github.io/categories/shortcodes/</guid>
+      <guid>https://jeryaiwei.github.io/categories/golang/</guid>
       <description></description>
     </item>
     
