@@ -58,7 +58,7 @@ Follow the following steps:
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.2a80334ec2fe8a61a90925de8eec7f11096f2bc767eb7b38a45708b2fd93cd11.css" integrity="sha256-KoAzTsL&#43;imGpCSXejux/EQlvK8dn63s4pFcIsv2TzRE=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.ae6cda58ec814d2db38744f29738e4be6729fb085a203b3ac96cd1d6a4209f85.css" integrity="sha256-rmzaWOyBTS2zh0Tylzjkvmcp&#43;whaIDs6yWzR1qQgn4U=" media="screen" crossorigin="anonymous">
 
 
 
@@ -84,7 +84,7 @@ Follow the following steps:
  Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:">
 <meta itemprop="datePublished" content="2014-04-02T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2014-04-02T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="349">
+<meta itemprop="wordCount" content="368">
 
 
 
@@ -134,7 +134,7 @@ Follow the following steps:
         
           
           
-            <a class="menu-item-link" href="https://jeryaiwei.github.io/post/">归档</a>
+            <a class="menu-item-link" href="https://jeryaiwei.github.io/post/">文章</a>
           
         
       </li><li class="mobile-menu-item">
@@ -186,6 +186,13 @@ Follow the following steps:
               </li>
             
           </ul>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://jeryaiwei.github.io/index.xml">订阅</a>
+          
         
       </li>
     
@@ -346,7 +353,7 @@ Follow the following steps:
         
           
           
-            <a class="menu-item-link" href="https://jeryaiwei.github.io/post/">归档</a>
+            <a class="menu-item-link" href="https://jeryaiwei.github.io/post/">文章</a>
           
 
         
@@ -414,6 +421,17 @@ Follow the following steps:
 
       </li>
     
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://jeryaiwei.github.io/index.xml">订阅</a>
+          
+
+        
+
+      </li>
+    
 
     
     
@@ -457,10 +475,14 @@ Follow the following steps:
             <a href="https://jeryaiwei.github.io/categories/index/"> index </a>
             
           </div>
-        <span class="more-meta"> 约 349 字 </span>
+        <span class="more-meta"> 约 368 字 </span>
           <span class="more-meta"> 预计阅读 2 分钟 </span>
 
         
+        
+          <span id="busuanzi_container_page_pv">
+            | 阅读 <span id="busuanzi_value_page_pv"></span>
+          </span>
         
 
         
@@ -502,40 +524,73 @@ you are reading right now.</p>
 <li>Open your browser to http://localhost:1313</li>
 </ol>
 <p>Corresponding pseudo commands:</p>
-<pre><code>git clone https://github.com/spf13/hugo
-cd hugo
-/path/to/where/you/installed/hugo server --source=./docs
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 27 ms
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">git clone https://github.com/spf13/hugo
+<span class="nb">cd</span> hugo
+/path/to/where/you/installed/hugo server --source<span class="o">=</span>./docs
+&gt; <span class="m">29</span> pages created
+&gt; <span class="m">0</span> tags index created
+&gt; in <span class="m">27</span> ms
 &gt; Web Server is available at http://localhost:1313
 &gt; Press ctrl+c to stop
-</code></pre>
-<p>Once you&rsquo;ve gotten here, follow along the rest of this page on your local build.</p>
+</code></pre></td></tr></table>
+</div>
+</div><p>Once you&rsquo;ve gotten here, follow along the rest of this page on your local build.</p>
 <h2 id="step-3-change-the-docs-site">Step 3. Change the docs site</h2>
 <p>Stop the Hugo process by hitting ctrl+c.</p>
 <p>Now we are going to run hugo again, but this time with hugo in watch mode.</p>
-<pre><code>/path/to/hugo/from/step/1/hugo server --source=./docs --watch
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 27 ms
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">/path/to/hugo/from/step/1/hugo server --source<span class="o">=</span>./docs --watch
+&gt; <span class="m">29</span> pages created
+&gt; <span class="m">0</span> tags index created
+&gt; in <span class="m">27</span> ms
 &gt; Web Server is available at http://localhost:1313
-&gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
+&gt; Watching <span class="k">for</span> changes in /Users/spf13/Code/hugo/docs/content
 &gt; Press ctrl+c to stop
-</code></pre>
-<p>Open your <a href="http://vim.spf13.com">favorite editor</a> and change one of the source
+</code></pre></td></tr></table>
+</div>
+</div><p>Open your <a href="http://vim.spf13.com">favorite editor</a> and change one of the source
 content pages. How about changing this very file to <em>fix the typo</em>. How about changing this very file to <em>fix the typo</em>.</p>
 <p>Content files are found in <code>docs/content/</code>. Unless otherwise specified, files
 are located at the same relative location as the url, in our case
 <code>docs/content/overview/quickstart.md</code>.</p>
 <p>Change and save this file.. Notice what happened in your terminal.</p>
-<pre><code>&gt; Change detected, rebuilding site
-
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 26 ms
-</code></pre>
-<p>Refresh the browser and observe that the typo is now fixed.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">&gt; Change detected, rebuilding site
+&gt; <span class="m">29</span> pages created
+&gt; <span class="m">0</span> tags index created
+&gt; in <span class="m">26</span> ms
+</code></pre></td></tr></table>
+</div>
+</div><p>Refresh the browser and observe that the typo is now fixed.</p>
 <p>Notice how quick that was. Try to refresh the site before it&rsquo;s finished building.. I double dare you.
 Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.</p>
 <h2 id="step-4-have-fun">Step 4. Have fun</h2>
@@ -621,30 +676,20 @@ Having nearly instant feedback enables you to have your creativity flow without 
 
   
   
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "jeryaiwei/comments"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
 
   
 
-  <div class="post bg-white">
-      <div id="comments-gitment"></div>
-      <link rel="stylesheet" href="/lib/gitment/gitment-0.0.3.min.css">
-        <script src="/lib/gitment/gitment-0.0.3.min.js"></script>
-      <script type="text/javascript">
-      const gitment = new Gitment({
-        id: 'hugoisforlovers.md',
-        title: 'Getting Started with Hugo',
-        link: decodeURI(location.href),
-        desc: 'Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.\nSave it somewhere specific as we will be using it in the next step.\nMore complete instructions are available at installing hugo\nStep 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.\nFollow the following steps:\n Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http:\/\/localhost:1313  Corresponding pseudo commands:',
-        owner: 'jeryaiwei',
-        repo: 'jeryaiwei.github.io',
-        oauth: {
-          client_id: '8bc5a4034f51fe31239a',
-          client_secret: '3b15ff4b14c3ad0532489f596180d9eeef52e6b4'
-        }
-      })
-      gitment.render('comments-gitment')
-      </script>
-      <noscript>Please enable JavaScript to view the <a href="https://github.com/imsun/gitment">comments powered by gitment.</a></noscript>
-    </div>
+  
 
   
 
@@ -715,6 +760,10 @@ Having nearly instant feedback enables you to have your creativity flow without 
 
   
   
+    <span id="busuanzi_container">
+      访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+    </span>
+  
 
   
 </div>
@@ -740,7 +789,7 @@ Having nearly instant feedback enables you to have your creativity flow without 
 
 
 
-<script type="text/javascript" src="/js/main.e123106c9309d09e71ca618e8ccef6b22e5467ca3892e5316cd3793cbd1d0919.js" integrity="sha256-4SMQbJMJ0J5xymGOjM72si5UZ8o4kuUxbNN5PL0dCRk=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.f6b05bc2026593c2eaef2f9a4688f90792427dab6219d40ff911c9225c3d95c3.js" integrity="sha256-9rBbwgJlk8Lq7y&#43;aRoj5B5JCfatiGdQP&#43;RHJIlw9lcM=" crossorigin="anonymous"></script>
 
 
 
@@ -761,6 +810,8 @@ Having nearly instant feedback enables you to have your creativity flow without 
 
 
 
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 

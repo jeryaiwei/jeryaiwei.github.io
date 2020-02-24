@@ -70,7 +70,7 @@
       <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
       
       <guid>https://jeryaiwei.github.io/post/shortcode-notice/</guid>
-      <description>normal use Note example: 1 note A notice disclaimer Result: note A notice disclaimer You could custom title : 1 笔记 A notice disclaimer 笔记 A notice disclaimer tip 1 tip A tip disclaimer tip A tip disclaimer info 1 info A info disclaimer info An information disclaimer warning 1 warning A warning disclaimer warning An warning disclaimer</description>
+      <description>normal use Note example: 1 2 3 {{&amp;lt; notice note &amp;gt;}} A notice disclaimer {{&amp;lt; /notice &amp;gt;}} Result: note A notice disclaimer You could custom title : 1 2 3 {{&amp;lt; notice note 笔记 &amp;gt;}} A notice disclaimer {{&amp;lt; /notice &amp;gt;}} 笔记 A notice disclaimer tip 1 2 3 {{&amp;lt; notice tip &amp;gt;}} A tip disclaimer {{&amp;lt; /notice &amp;gt;}} tip A tip disclaimer info 1 2 3 {{&amp;lt;</description>
     </item>
     
     <item>
@@ -142,8 +142,8 @@ Follow the following steps:
       
       <guid>https://jeryaiwei.github.io/post/migrate-from-jekyll/</guid>
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
-▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+1 2 3  ▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png   should become
+1 2 3 4  ▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png   Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
     </item>
     
     <item>

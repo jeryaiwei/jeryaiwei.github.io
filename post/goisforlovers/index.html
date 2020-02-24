@@ -54,7 +54,7 @@ This document is a brief primer on using go templates." />
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.2a80334ec2fe8a61a90925de8eec7f11096f2bc767eb7b38a45708b2fd93cd11.css" integrity="sha256-KoAzTsL&#43;imGpCSXejux/EQlvK8dn63s4pFcIsv2TzRE=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.ae6cda58ec814d2db38744f29738e4be6729fb085a203b3ac96cd1d6a4209f85.css" integrity="sha256-rmzaWOyBTS2zh0Tylzjkvmcp&#43;whaIDs6yWzR1qQgn4U=" media="screen" crossorigin="anonymous">
 
 
 
@@ -72,7 +72,7 @@ This document is a brief primer on using go templates." />
 This document is a brief primer on using go templates.">
 <meta itemprop="datePublished" content="2014-04-02T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2014-04-02T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="1509">
+<meta itemprop="wordCount" content="1559">
 
 
 
@@ -118,7 +118,7 @@ This document is a brief primer on using go templates."/>
         
           
           
-            <a class="menu-item-link" href="https://jeryaiwei.github.io/post/">归档</a>
+            <a class="menu-item-link" href="https://jeryaiwei.github.io/post/">文章</a>
           
         
       </li><li class="mobile-menu-item">
@@ -170,6 +170,13 @@ This document is a brief primer on using go templates."/>
               </li>
             
           </ul>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://jeryaiwei.github.io/index.xml">订阅</a>
+          
         
       </li>
     
@@ -330,7 +337,7 @@ This document is a brief primer on using go templates."/>
         
           
           
-            <a class="menu-item-link" href="https://jeryaiwei.github.io/post/">归档</a>
+            <a class="menu-item-link" href="https://jeryaiwei.github.io/post/">文章</a>
           
 
         
@@ -398,6 +405,17 @@ This document is a brief primer on using go templates."/>
 
       </li>
     
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://jeryaiwei.github.io/index.xml">订阅</a>
+          
+
+        
+
+      </li>
+    
 
     
     
@@ -441,10 +459,14 @@ This document is a brief primer on using go templates."/>
             <a href="https://jeryaiwei.github.io/categories/index/"> index </a>
             
           </div>
-        <span class="more-meta"> 约 1509 字 </span>
+        <span class="more-meta"> 约 1559 字 </span>
           <span class="more-meta"> 预计阅读 8 分钟 </span>
 
         
+        
+          <span id="busuanzi_container_page_pv">
+            | 阅读 <span id="busuanzi_value_page_pv"></span>
+          </span>
         
 
         
@@ -502,34 +524,71 @@ details can be found in the <a href="http://golang.org/pkg/html/template/">go do
 <h2 id="basic-syntax">Basic Syntax</h2>
 <p>Go lang templates are html files with the addition of variables and
 functions.</p>
-<p><strong>Go variables and functions are accessible within {{ }}</strong></p>
+<p><strong>Go variables and functions are accessible within {{ }}.</strong></p>
 <p>Accessing a predefined variable &ldquo;foo&rdquo;:</p>
-<pre><code>{{ foo }}
-</code></pre>
-<p><strong>Parameters are separated using spaces</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{ foo }}
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Parameters are separated using spaces.</strong></p>
 <p>Calling the add function with input of 1, 2:</p>
-<pre><code>{{ add 1 2 }}
-</code></pre>
-<p><strong>Methods and fields are accessed via dot notation</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{ add 1 2 }}
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Methods and fields are accessed via dot notation.</strong></p>
 <p>Accessing the Page Parameter &ldquo;bar&rdquo;</p>
-<pre><code>{{ .Params.bar }}
-</code></pre>
-<p><strong>Parentheses can be used to group items together</strong></p>
-<pre><code>{{ if or (isset .Params &quot;alt&quot;) (isset .Params &quot;caption&quot;) }} Caption {{ end }}
-</code></pre>
-<h2 id="variables">Variables</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{ .Params.bar }}
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Parentheses can be used to group items together</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{ if or (isset .Params &#34;alt&#34;) (isset .Params &#34;caption&#34;) }} Caption {{ end }}
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="variables">Variables</h2>
 <p>Each go template has a struct (object) made available to it. In hugo each
 template is passed either a page or a node struct depending on which type of
 page you are rendering. More details are available on the
 <a href="/layout/variables">variables</a> page.</p>
 <p>A variable is accessed by referencing the variable name.</p>
-<pre><code>&lt;title&gt;{{ .Title }}&lt;/title&gt;
-</code></pre>
-<p>Variables can also be defined and referenced.</p>
-<pre><code>{{ $address := &quot;123 Main St.&quot;}}
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&lt;title&gt;{{ .Title }}&lt;/title&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>Variables can also be defined and referenced.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{ $address := &#34;123 Main St.&#34;}}
 {{ $address }}
-</code></pre>
-<h2 id="functions">Functions</h2>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="functions">Functions</h2>
 <p>Go template ship with a few functions which provide basic functionality. The go
 template system also provides a mechanism for applications to extend the
 available functions with their own. <a href="/layout/functions">Hugo template
@@ -538,39 +597,76 @@ are useful for building websites. Functions are called by using their name
 followed by the required parameters separated by spaces. Template
 functions cannot be added without recompiling hugo.</p>
 <p><strong>Example:</strong></p>
-<pre><code>{{ add 1 2 }}
-</code></pre>
-<h2 id="includes">Includes</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{ add 1 2 }}
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="includes">Includes</h2>
 <p>When including another template you will pass to it the data it will be
 able to access. To pass along the current context please remember to
 include a trailing dot. The templates location will always be starting at
 the /layout/ directory within Hugo.</p>
 <p><strong>Example:</strong></p>
-<pre><code>{{ template &quot;chrome/header.html&quot; . }}
-</code></pre>
-<h2 id="logic">Logic</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{ template &#34;chrome/header.html&#34; . }}
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="logic">Logic</h2>
 <p>Go templates provide the most basic iteration and conditional logic.</p>
 <h3 id="iteration">Iteration</h3>
 <p>Just like in go, the go templates make heavy use of range to iterate over
 a map, array or slice. The following are different examples of how to use
 range.</p>
-<p><strong>Example 1: Using Context</strong></p>
-<pre><code>{{ range array }}
-    {{ . }}
+<p><strong>Example 1: Using Context.</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{ range array }}
+{{ . }}
 {{ end }}
-</code></pre>
-<p><strong>Example 2: Declaring value variable name</strong></p>
-<pre><code>{{range $element := array}}
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Example 2: Declaring value variable name.</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{range $element := array}}
     {{ $element }}
 {{ end }}
-</code></pre>
-<p><strong>Example 2: Declaring key and value variable name</strong></p>
-<pre><code>{{range $index, $element := array}}
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Example 2: Declaring key and value variable name.</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{range $index, $element := array}}
     {{ $index }}
     {{ $element }}
 {{ end }}
-</code></pre>
-<h3 id="conditionals">Conditionals</h3>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="conditionals">Conditionals</h3>
 <p>If, else, with, or, &amp; and provide the framework for handling conditional
 logic in Go Templates. Like range, each statement is closed with <code>end</code>.</p>
 <p>Go Templates treat the following values as false:</p>
@@ -579,34 +675,72 @@ logic in Go Templates. Like range, each statement is closed with <code>end</code
 <li>0</li>
 <li>any array, slice, map, or string of length zero</li>
 </ul>
-<p><strong>Example 1: If</strong></p>
-<pre><code>{{ if isset .Params &quot;title&quot; }}&lt;h4&gt;{{ index .Params &quot;title&quot; }}&lt;/h4&gt;{{ end }}
-</code></pre>
-<p><strong>Example 2: If -&gt; Else</strong></p>
-<pre><code>{{ if isset .Params &quot;alt&quot; }}
-    {{ index .Params &quot;alt&quot; }}
+<p><strong>Example 1: If.</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{ if isset .Params &#34;title&#34; }}&lt;h4&gt;{{ index .Params &#34;title&#34; }}&lt;/h4&gt;{{ end }}
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Example 2: If -&gt; Else.</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{ if isset .Params &#34;alt&#34; }}
+    {{ index .Params &#34;alt&#34; }}
 {{else}}
-    {{ index .Params &quot;caption&quot; }}
+    {{ index .Params &#34;caption&#34; }}
 {{ end }}
-</code></pre>
-<p><strong>Example 3: And &amp; Or</strong></p>
-<pre><code>{{ if and (or (isset .Params &quot;title&quot;) (isset .Params &quot;caption&quot;)) (isset .Params &quot;attr&quot;)}}
-</code></pre>
-<p><strong>Example 4: With</strong></p>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Example 3: And &amp; Or.</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{ if and (or (isset .Params &#34;title&#34;) (isset .Params &#34;caption&#34;)) (isset .Params &#34;attr&#34;)}}
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Example 4: With.</strong></p>
 <p>An alternative way of writing &ldquo;if&rdquo; and then referencing the same value
 is to use &ldquo;with&rdquo; instead. With rebinds the context <code>.</code> within its scope,
 and skips the block if the variable is absent.</p>
 <p>The first example above could be simplified as:</p>
-<pre><code>{{ with .Params.title }}&lt;h4&gt;{{ . }}&lt;/h4&gt;{{ end }}
-</code></pre>
-<p><strong>Example 5: If -&gt; Else If</strong></p>
-<pre><code>{{ if isset .Params &quot;alt&quot; }}
-    {{ index .Params &quot;alt&quot; }}
-{{ else if isset .Params &quot;caption&quot; }}
-    {{ index .Params &quot;caption&quot; }}
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{ with .Params.title }}&lt;h4&gt;{{ . }}&lt;/h4&gt;{{ end }}
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Example 5: If -&gt; Else If.</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{ if isset .Params &#34;alt&#34; }}
+    {{ index .Params &#34;alt&#34; }}
+{{ else if isset .Params &#34;caption&#34; }}
+    {{ index .Params &#34;caption&#34; }}
 {{ end }}
-</code></pre>
-<h2 id="pipes">Pipes</h2>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="pipes">Pipes</h2>
 <p>One of the most powerful components of go templates is the ability to
 stack actions one after another. This is done by using pipes. Borrowed
 from unix pipes, the concept is simple, each pipeline&rsquo;s output becomes the
@@ -617,28 +751,62 @@ pipes is that they only can work with a single value and that value
 becomes the last parameter of the next pipeline.</p>
 <p>A few simple examples should help convey how to use the pipe.</p>
 <p><strong>Example 1 :</strong></p>
-<pre><code>{{ if eq 1 1 }} Same {{ end }}
-</code></pre>
-<p>is the same as</p>
-<pre><code>{{ eq 1 1 | if }} Same {{ end }}
-</code></pre>
-<p>It does look odd to place the if at the end, but it does provide a good
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{ if eq 1 1 }} Same {{ end }}
+</code></pre></td></tr></table>
+</div>
+</div><p>is the same as</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{ eq 1 1 | if }} Same {{ end }}
+</code></pre></td></tr></table>
+</div>
+</div><p>It does look odd to place the if at the end, but it does provide a good
 illustration of how to use the pipes.</p>
 <p><strong>Example 2 :</strong></p>
-<pre><code>{{ index .Params &quot;disqus_url&quot; | html }}
-</code></pre>
-<p>Access the page parameter called &ldquo;disqus_url&rdquo; and escape the HTML.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{ index .Params &#34;disqus_url&#34; | html }}
+</code></pre></td></tr></table>
+</div>
+</div><p>Access the page parameter called &ldquo;disqus_url&rdquo; and escape the HTML.</p>
 <p><strong>Example 3 :</strong></p>
-<pre><code>{{ if or (or (isset .Params &quot;title&quot;) (isset .Params &quot;caption&quot;)) (isset .Params &quot;attr&quot;)}}
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{ if or (or (isset .Params &#34;title&#34;) (isset .Params &#34;caption&#34;)) (isset .Params &#34;attr&#34;)}}
 Stuff Here
 {{ end }}
-</code></pre>
-<p>Could be rewritten as</p>
-<pre><code>{{  isset .Params &quot;caption&quot; | or isset .Params &quot;title&quot; | or isset .Params &quot;attr&quot; | if }}
+</code></pre></td></tr></table>
+</div>
+</div><p>Could be rewritten as</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{  isset .Params &#34;caption&#34; | or isset .Params &#34;title&#34; | or isset .Params &#34;attr&#34; | if }}
 Stuff Here
 {{ end }}
-</code></pre>
-<h2 id="context-aka-the-dot">Context (aka. the dot)</h2>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="context-aka-the-dot">Context (aka. the dot)</h2>
 <p>The most easily overlooked concept to understand about go templates is that {{ . }}
 always refers to the current context. In the top level of your template this
 will be the data set made available to it. Inside of a iteration it will have
@@ -647,12 +815,21 @@ will no longer refer to the data available to the entire page. If you need to
 access this from within the loop you will likely want to set it to a variable
 instead of depending on the context.</p>
 <p><strong>Example:</strong></p>
-<pre><code>  {{ $title := .Site.Title }}
-  {{ range .Params.tags }}
-    &lt;li&gt; &lt;a href=&quot;{{ $baseurl }}/tags/{{ . | urlize }}&quot;&gt;{{ . }}&lt;/a&gt; - {{ $title }} &lt;/li&gt;
-  {{ end }}
-</code></pre>
-<p>Notice how once we have entered the loop the value of {{ . }} has changed. We
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{ $title := .Site.Title }}
+{{ range .Params.tags }}
+&lt;li&gt; &lt;a href=&#34;{{ $baseurl }}/tags/{{ . | urlize }}&#34;&gt;{{ . }}&lt;/a&gt; - {{ $title }} &lt;/li&gt;
+{{ end }}
+</code></pre></td></tr></table>
+</div>
+</div><p>Notice how once we have entered the loop the value of {{ . }} has changed. We
 have defined a variable outside of the loop so we have access to it from within
 the loop.</p>
 <h1 id="hugo-parameters">Hugo Parameters</h1>
@@ -694,13 +871,23 @@ notoc: true
 </code></pre></td></tr></table>
 </div>
 </div><p>Here is the corresponding code inside of the template:</p>
-<pre><code>  {{ if not .Params.notoc }}
-    &lt;div id=&quot;toc&quot; class=&quot;well col-md-4 col-sm-6&quot;&gt;
-    {{ .TableOfContents }}
-    &lt;/div&gt;
-  {{ end }}
-</code></pre>
-<h2 id="using-site-config-parameters">Using Site (config) Parameters</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{ if not .Params.notoc }}
+&lt;div id=&#34;toc&#34; class=&#34;well col-md-4 col-sm-6&#34;&gt;
+{{ .TableOfContents }}
+&lt;/div&gt;
+{{ end }}
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="using-site-config-parameters">Using Site (config) Parameters</h2>
 <p>In your top-level configuration file (eg, <code>config.yaml</code>) you can define site
 parameters, which are values which will be available to you in chrome.</p>
 <p>For instance, you might declare:</p>
@@ -856,30 +1043,20 @@ so, such as in this example:</p>
 
   
   
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "jeryaiwei/comments"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
 
   
 
-  <div class="post bg-white">
-      <div id="comments-gitment"></div>
-      <link rel="stylesheet" href="/lib/gitment/gitment-0.0.3.min.css">
-        <script src="/lib/gitment/gitment-0.0.3.min.js"></script>
-      <script type="text/javascript">
-      const gitment = new Gitment({
-        id: 'goisforlovers.md',
-        title: '(Hu)go Template Primer',
-        link: decodeURI(location.href),
-        desc: 'Hugo uses the excellent go html\/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.\nThis document is a brief primer on using go templates.',
-        owner: 'jeryaiwei',
-        repo: 'jeryaiwei.github.io',
-        oauth: {
-          client_id: '8bc5a4034f51fe31239a',
-          client_secret: '3b15ff4b14c3ad0532489f596180d9eeef52e6b4'
-        }
-      })
-      gitment.render('comments-gitment')
-      </script>
-      <noscript>Please enable JavaScript to view the <a href="https://github.com/imsun/gitment">comments powered by gitment.</a></noscript>
-    </div>
+  
 
   
 
@@ -950,6 +1127,10 @@ so, such as in this example:</p>
 
   
   
+    <span id="busuanzi_container">
+      访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+    </span>
+  
 
   
 </div>
@@ -975,7 +1156,7 @@ so, such as in this example:</p>
 
 
 
-<script type="text/javascript" src="/js/main.e123106c9309d09e71ca618e8ccef6b22e5467ca3892e5316cd3793cbd1d0919.js" integrity="sha256-4SMQbJMJ0J5xymGOjM72si5UZ8o4kuUxbNN5PL0dCRk=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.f6b05bc2026593c2eaef2f9a4688f90792427dab6219d40ff911c9225c3d95c3.js" integrity="sha256-9rBbwgJlk8Lq7y&#43;aRoj5B5JCfatiGdQP&#43;RHJIlw9lcM=" crossorigin="anonymous"></script>
 
 
 
@@ -996,6 +1177,8 @@ so, such as in this example:</p>
 
 
 
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 

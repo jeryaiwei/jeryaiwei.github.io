@@ -54,7 +54,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.2a80334ec2fe8a61a90925de8eec7f11096f2bc767eb7b38a45708b2fd93cd11.css" integrity="sha256-KoAzTsL&#43;imGpCSXejux/EQlvK8dn63s4pFcIsv2TzRE=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.ae6cda58ec814d2db38744f29738e4be6729fb085a203b3ac96cd1d6a4209f85.css" integrity="sha256-rmzaWOyBTS2zh0Tylzjkvmcp&#43;whaIDs6yWzR1qQgn4U=" media="screen" crossorigin="anonymous">
 
 
 
@@ -118,7 +118,7 @@ This tutorial will show you how to create a simple theme in Hugo. I assume that 
         
           
           
-            <a class="menu-item-link" href="https://jeryaiwei.github.io/post/">归档</a>
+            <a class="menu-item-link" href="https://jeryaiwei.github.io/post/">文章</a>
           
         
       </li><li class="mobile-menu-item">
@@ -170,6 +170,13 @@ This tutorial will show you how to create a simple theme in Hugo. I assume that 
               </li>
             
           </ul>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://jeryaiwei.github.io/index.xml">订阅</a>
+          
         
       </li>
     
@@ -330,7 +337,7 @@ This tutorial will show you how to create a simple theme in Hugo. I assume that 
         
           
           
-            <a class="menu-item-link" href="https://jeryaiwei.github.io/post/">归档</a>
+            <a class="menu-item-link" href="https://jeryaiwei.github.io/post/">文章</a>
           
 
         
@@ -398,6 +405,17 @@ This tutorial will show you how to create a simple theme in Hugo. I assume that 
 
       </li>
     
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://jeryaiwei.github.io/index.xml">订阅</a>
+          
+
+        
+
+      </li>
+    
 
     
     
@@ -444,6 +462,10 @@ This tutorial will show you how to create a simple theme in Hugo. I assume that 
           <span class="more-meta"> 预计阅读 37 分钟 </span>
 
         
+        
+          <span id="busuanzi_container_page_pv">
+            | 阅读 <span id="busuanzi_value_page_pv"></span>
+          </span>
         
 
         
@@ -2298,30 +2320,20 @@ $ vi themes/zafta/layouts/_default/single.html
 
   
   
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "jeryaiwei/comments"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
 
   
 
-  <div class="post bg-white">
-      <div id="comments-gitment"></div>
-      <link rel="stylesheet" href="/lib/gitment/gitment-0.0.3.min.css">
-        <script src="/lib/gitment/gitment-0.0.3.min.js"></script>
-      <script type="text/javascript">
-      const gitment = new Gitment({
-        id: 'english-preview.md',
-        title: 'English Creating a New Theme',
-        link: decodeURI(location.href),
-        desc: '\x3ch2 id=\x22introduction\x22\x3eIntroduction\x3c\/h2\x3e\n\x3cp\x3eThis tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I\x26rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won\x26rsquo;t cover using CSS to style your theme.\x3c\/p\x3e',
-        owner: 'jeryaiwei',
-        repo: 'jeryaiwei.github.io',
-        oauth: {
-          client_id: '8bc5a4034f51fe31239a',
-          client_secret: '3b15ff4b14c3ad0532489f596180d9eeef52e6b4'
-        }
-      })
-      gitment.render('comments-gitment')
-      </script>
-      <noscript>Please enable JavaScript to view the <a href="https://github.com/imsun/gitment">comments powered by gitment.</a></noscript>
-    </div>
+  
 
   
 
@@ -2392,6 +2404,10 @@ $ vi themes/zafta/layouts/_default/single.html
 
   
   
+    <span id="busuanzi_container">
+      访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+    </span>
+  
 
   
 </div>
@@ -2417,7 +2433,7 @@ $ vi themes/zafta/layouts/_default/single.html
 
 
 
-<script type="text/javascript" src="/js/main.e123106c9309d09e71ca618e8ccef6b22e5467ca3892e5316cd3793cbd1d0919.js" integrity="sha256-4SMQbJMJ0J5xymGOjM72si5UZ8o4kuUxbNN5PL0dCRk=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.f6b05bc2026593c2eaef2f9a4688f90792427dab6219d40ff911c9225c3d95c3.js" integrity="sha256-9rBbwgJlk8Lq7y&#43;aRoj5B5JCfatiGdQP&#43;RHJIlw9lcM=" crossorigin="anonymous"></script>
 
 
 
@@ -2438,6 +2454,8 @@ $ vi themes/zafta/layouts/_default/single.html
 
 
 
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
