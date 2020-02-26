@@ -31,12 +31,63 @@
   
   <url>
     <loc>https://jeryaiwei.github.io/categories/</loc>
+    <lastmod>2018-03-04T16:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeryaiwei.github.io/categories/docs/</loc>
+    <lastmod>2018-03-04T16:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeryaiwei.github.io/categories/index/</loc>
+    <lastmod>2018-03-04T16:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeryaiwei.github.io/tags/preview/</loc>
+    <lastmod>2018-03-04T16:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeryaiwei.github.io/tags/shortcodes/</loc>
+    <lastmod>2018-03-04T16:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeryaiwei.github.io/categories/shortcodes/</loc>
+    <lastmod>2018-03-04T16:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeryaiwei.github.io/post/shortcode-notice/</loc>
+    <lastmod>2018-03-04T16:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jeryaiwei.github.io/tags/tag-6/</loc>
+    <lastmod>2018-03-04T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://jeryaiwei.github.io/tags/</loc>
+    <lastmod>2018-03-04T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

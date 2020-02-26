@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Jerry Blog</title>
-    <link>https://jeryaiwei.github.io/post/</link>
-    <description>Recent content in Posts on Jerry Blog</description>
+    <title>index on Jerry Blog</title>
+    <link>https://jeryaiwei.github.io/categories/index/</link>
+    <description>Recent content in index on Jerry Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 26 Feb 2020 20:45:40 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 03 Mar 2018 16:01:23 +0800</lastBuildDate>
     
-	<atom:link href="https://jeryaiwei.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jeryaiwei.github.io/categories/index/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://jeryaiwei.github.io/post/my-first-post/</link>
-      <pubDate>Wed, 26 Feb 2020 20:45:40 +0800</pubDate>
-      
-      <guid>https://jeryaiwei.github.io/post/my-first-post/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Shortcodes Notice Preview</title>
