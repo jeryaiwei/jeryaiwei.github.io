@@ -13,6 +13,15 @@
           "date_published": "2020-02-20T21:38:52+08:00",
           "content_html": "\u003ch2 id=\"关于我\"\u003e关于我\u003c/h2\u003e\n\u003ch3 id=\"计算机从业者\"\u003e计算机从业者\u003c/h3\u003e\n\u003ch3 id=\"叛逆者\"\u003e叛逆者\u003c/h3\u003e\n\u003ch2 id=\"关于本站\"\u003e关于本站\u003c/h2\u003e\n\u003ch3 id=\"关于本站的名称\"\u003e关于本站的名称\u003c/h3\u003e\n\u003ch3 id=\"关于本站的建站目的\"\u003e关于本站的建站目的\u003c/h3\u003e\n\u003ch3 id=\"关于本站架构\"\u003e关于本站架构\u003c/h3\u003e\n\u003cp\u003e本站使用的系统：\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\u003ca href=\"https://github.com/utterance/utterances\"\u003eutterance\u003c/a\u003e，基于 github issues，需要有 github 账号。我写了一篇简介。\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://github.com/jeryaiwei/hugo-theme-jane\"\u003etheme\u003c/a\u003e，基于 hexo-theme-jane，github有详细教程。\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://gohugo.io/\"\u003ehugo\u003c/a\u003e, Hugo是由Go语言实现的静态网站生成器，号称目前最快。\u003c/li\u003e\n\u003c/ol\u003e\n"
         }
+      , 
+        {
+          "id": "https://jeryaiwei.github.io/post/my-first-post/",
+          "url": "https://jeryaiwei.github.io/post/my-first-post/",
+          "title": "My First Post",
+          "date_published": "2020-02-26T20:45:40+08:00",
+          "content_html": ""
+        }
+      
       
       
       

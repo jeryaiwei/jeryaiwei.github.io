@@ -35,5 +35,16 @@
       
     </item>
     
+    <item>
+      <title>My First Post</title>
+      <link>https://jeryaiwei.github.io/post/my-first-post/</link>
+      <pubDate>Wed, 26 Feb 2020 20:45:40 +0800</pubDate>
+      
+      <guid>https://jeryaiwei.github.io/post/my-first-post/</guid>
+      
+        <description></description>
+      
+    </item>
+    
   </channel>
 </rss>
