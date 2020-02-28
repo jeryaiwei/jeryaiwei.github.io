@@ -19,15 +19,13 @@
       <guid>https://jeryaiwei.github.io/about/</guid>
       
         <description>&lt;h2 id=&#34;关于我&#34;&gt;关于我&lt;/h2&gt;
+&lt;p&gt;07年参加工作，主要从事软件相关工作，期间有5年在银行工作。一转眼这么多年过去了，竟然发现自己还没有一个属于自己的博客。心生触动，开启了自己的blog之旅，希望给自己以前的工作留下一些回忆。&lt;/p&gt;
 &lt;h3 id=&#34;计算机从业者&#34;&gt;计算机从业者&lt;/h3&gt;
 &lt;h3 id=&#34;叛逆者&#34;&gt;叛逆者&lt;/h3&gt;
-&lt;h2 id=&#34;关于本站&#34;&gt;关于本站&lt;/h2&gt;
-&lt;h3 id=&#34;关于本站的名称&#34;&gt;关于本站的名称&lt;/h3&gt;
-&lt;h3 id=&#34;关于本站的建站目的&#34;&gt;关于本站的建站目的&lt;/h3&gt;
 &lt;h3 id=&#34;关于本站架构&#34;&gt;关于本站架构&lt;/h3&gt;
 &lt;p&gt;本站使用的系统：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/utterance/utterances&#34;&gt;utterance&lt;/a&gt;，基于 github issues，需要有 github 账号。我写了一篇简介。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/utterance/utterances&#34;&gt;utterance&lt;/a&gt;，基于 github issues，需要有 github 账号。&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/jeryaiwei/hugo-theme-jane&#34;&gt;theme&lt;/a&gt;，基于 hexo-theme-jane，github有详细教程。&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;hugo&lt;/a&gt;, Hugo是由Go语言实现的静态网站生成器，号称目前最快。&lt;/li&gt;
 &lt;/ol&gt;
